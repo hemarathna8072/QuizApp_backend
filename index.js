@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const { User, Score, Question } = require('./schema');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const port =  8000;
 
 app.use(bodyParser.json());
