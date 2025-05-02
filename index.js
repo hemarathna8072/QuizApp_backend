@@ -12,7 +12,7 @@ app.use(cors());
 
 async function DBconnection() {
   try {
-    await mongoose.connect('mongodb+srv://hemarathna:hema_123@cluster0.doyohtd.mongodb.net/');
+    await mongoose.connect('mongodb+srv://hemarathna:hema_123@cluster0.doyohtd.mongodb.net/quiz_db');
     app.listen(port, function () {
       console.log(`Connected to DB,Listening to port : ${port}`);
     });
